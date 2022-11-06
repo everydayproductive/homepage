@@ -1,5 +1,5 @@
 const App = () => (
-  <div className='w-screen h-screen flex flex-col items-center justify-center bg-blue-700 text-white text-4xl'>
+  <div className='w-screen h-screen flex flex-col justify-center items-center bg-blue-700 text-white text-4xl'>
     <p>vite-tailwind-starter</p>
     <div className='bg-white p-1'>
       <p className='text-xl text-blue-700'>with yarn/bun</p>
