@@ -1,16 +1,13 @@
-import reactLogo, { ReactComponent as Logo } from '~/assets/react.svg'
-import { ReactComponent as DiscordLogo } from '~/assets/discord-logo-black.svg'
+import { ReactComponent as EPLogo } from '~/assets/ep-logo.svg'
+import { ReactComponent as DiscordLogoWhite } from '~/assets/discord-logo-white.svg'
+import { ReactComponent as SlackLogoWhite } from '~/assets/Slack_RGB_White.svg'
 
 const App = () => {
-  console.log('reactLogo=', reactLogo)
   return (
-    <div className='flex h-screen w-screen flex-col items-center justify-center bg-blue-700 text-4xl text-white'>
-      <img src={reactLogo} alt='React SVG' />
-      Test
-      <Logo />
-      <div className='w-[200px] border border-black'>
-        <DiscordLogo width={200} />
-      </div>
+    <div className='flex h-screen w-screen flex-col items-center justify-center bg-[#459ED0] text-4xl text-white'>
+      <EPLogo width={300} />
+      <DiscordLogoWhite width={200} />
+      <SlackLogoWhite width={200} />
     </div>
   )
 }
