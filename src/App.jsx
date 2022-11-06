@@ -4,10 +4,9 @@ import { ReactComponent as DiscordLogo } from '~/assets/discord-logo-black.svg'
 const App = () => {
   console.log('reactLogo=', reactLogo)
   return (
-    <div className='h-screen w-screen flex-col items-center justify-center bg-blue-700 text-4xl text-white
-    flex'>
+    <div className='flex h-screen w-screen flex-col items-center justify-center bg-blue-700 text-4xl text-white'>
       <img src={reactLogo} alt='React SVG' />
-      Test 2
+      Test
       <Logo />
       <div className='w-[200px] border border-black'>
         <DiscordLogo width={200} />
