@@ -12,8 +12,8 @@ jobs:
 
     env:
       CI: true
-      BUN_INSTALL: $HOME/.bun
-      PATH: $BUN_INSTALL/bin:$PATH
+      BUN_INSTALL: '$HOME/.bun'
+      PATH: '$BUN_INSTALL/bin:$PATH'
 
     strategy:
       matrix:
