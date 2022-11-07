@@ -8,7 +8,7 @@ const App = () => {
       <EPLogo width={300} />
       <a
         className='mt-5'
-        href='http://discord.everydayproductive.com'
+        href='https://discord.com/invite/Sq5bgwpwWs'
         target='_blank'
         rel='noreferrer'
       >
@@ -16,7 +16,7 @@ const App = () => {
       </a>
       <a
         className='mt-5'
-        href='http://slack.everydayproductive.com'
+        href='https://join.slack.com/t/everydayproductive/shared_invite/zt-1j8ilbdcj-bZawEy2UfTz6FTrN5xYowQ'
         target='_blank'
         rel='noreferrer'
       >
