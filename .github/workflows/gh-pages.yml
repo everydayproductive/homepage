@@ -24,12 +24,12 @@ jobs:
         uses: actions/setup-node@v3.5.0
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Setup yarn
-        run: corepack enable
+      - name: Install bun.sh
+        run: curl https://bun.sh/install | bash
       - name: Install Dependencies
-        run: yarn install
+        run: bun install
       - name: Build Packages 📦
-        run: yarn build
+        run: bun run build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
