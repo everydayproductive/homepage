@@ -3,7 +3,7 @@
   "setupTasks": [
     {
       "name": "Install Dependencies",
-      "command": "yarn install"
+      "command": "bun install"
     }
   ],
 
@@ -11,37 +11,37 @@
   "tasks": {
     "dev": {
       "name": "dev",
-      "command": "yarn dev",
+      "command": "bun run dev",
       "runAtStart": true
     },
     "build": {
       "name": "build",
-      "command": "yarn build",
+      "command": "bun run build",
       "runAtStart": false
     },
     "preview": {
       "name": "preview",
-      "command": "yarn preview",
+      "command": "bun run preview",
       "runAtStart": false
     },
     "test": {
       "name": "test",
-      "command": "yarn test",
+      "command": "bun run test",
       "runAtStart": false
     },
     "test:cov": {
       "name": "test:cov",
-      "command": "yarn test:cov",
+      "command": "bun run test:cov",
       "runAtStart": false
     },
     "lint": {
       "name": "lint",
-      "command": "yarn lint",
+      "command": "bun run lint",
       "runAtStart": false
     },
     "lint:fix": {
       "name": "lint:fix",
-      "command": "yarn lint:fix",
+      "command": "bun run lint:fix",
       "runAtStart": false
     }
   }
