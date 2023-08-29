@@ -1,0 +1,41 @@
+name: GH Pages
+
+on:
+  push:
+    tags:
+      - d*
+
+jobs:
+  nodejs:
+    name: Deploy GH-pages
+    runs-on: ubuntu-latest
+
+    env:
+      CI: true
+      BUN_INSTALL: $HOME/.bun
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+      - name: Check out code 🛎️
+        uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3.5.0
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install bun.sh
+        run: curl https://bun.sh/install | bash
+      - name: Update PATH
+        run: echo "$BUN_INSTALL/bin" >> $GITHUB_PATH
+      - name: Install Dependencies
+        run: bun install
+      - name: Build Packages 📦
+        run: bun run build
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.4.0
+        with:
+          branch: gh-pages
+          folder: dist
+          CLEAN: true
