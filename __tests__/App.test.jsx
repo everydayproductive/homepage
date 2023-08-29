@@ -10,6 +10,7 @@ describe('App', () => {
 
   it('displays welcome text', () => {
     render(<App />)
-    expect(screen.getByText(/^vite-tailwind-starter/i)).toBeInTheDocument()
+    expect(screen.getByText(/^Creative/i)).toBeInTheDocument()
+    expect(screen.getByText(/^Constraints/i)).toBeInTheDocument()
   })
 })
