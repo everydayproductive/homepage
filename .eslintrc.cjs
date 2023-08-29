@@ -3,9 +3,6 @@
  */
 module.exports = {
   parser: '@typescript-eslint/parser',
-  globals: {
-    __PATH_PREFIX__: true
-  },
   env: {
     browser: true,
     es2021: true
@@ -15,36 +12,26 @@ module.exports = {
       version: 'detect'
     },
     jest: {
-      version: 27
+      version: 29
     }
   },
+  ignorePatterns: ['dist', '.eslintrc.cjs'],
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'standard',
     'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
     'plugin:react/jsx-runtime',
     'plugin:jest/recommended',
-    'plugin:jest/style'
+    'plugin:jest/style',
+    'prettier'
   ],
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true
-    },
-    requireConfigFile: false,
-    ecmaVersion: 12,
-    sourceType: 'module'
-  },
-  plugins: [
-    '@typescript-eslint',
-    'react',
-    'jest'
-  ],
+  plugins: ['react-refresh', 'jest'],
   rules: {
-    'react/prop-types': 0,
-    'jsx-quotes': ['error', 'prefer-single'],
-    'jest/expect-expect': 0,
-    'jest/no-standalone-expect': 0
+    'react-refresh/only-export-components': [
+      'warn',
+      { allowConstantExport: true }
+    ]
   }
 }

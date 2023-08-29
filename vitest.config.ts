@@ -11,6 +11,7 @@ export default defineConfig({
     environment: 'happy-dom',
     setupFiles: ['./setup-vitest-env.js'],
     coverage: {
+      provider: 'v8',
       exclude: [
         '**/dist',
         '**/.pnp.*',
@@ -18,8 +19,6 @@ export default defineConfig({
         '**/*.test.{js,jsx,ts,tsx}'
       ]
     },
-    include: [
-      '**/*.test.{js,jsx,ts,tsx}'
-    ]
+    include: ['**/*.test.{js,jsx,ts,tsx}']
   }
 })
