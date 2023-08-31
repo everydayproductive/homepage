@@ -1,33 +1,36 @@
-import { ReactComponent as IdBoxLogo } from '~/assets/id-box.svg'
+import artbeaImgUrl from '~/assets/artbea.jpg'
 
 const Artbea = () => {
   return (
     <div className='mt-5 w-full'>
-      <div className='left-0 right-0 z-50 mx-auto w-full max-w-2xl flex-col bg-[#EFEFEF] text-black md:flex md:flex-row'>
-        <div className='z-50 flex items-center justify-center bg-white px-4 pb-5 md:hidden'>
-          <IdBoxLogo width='150px' />
+      <div className='left-0 right-0 z-50 mx-auto w-full max-w-screen-lg flex-col bg-[#EFEFEF] text-black lg:flex lg:flex-row'>
+        <div className='z-50 flex items-center justify-center bg-white px-4 pb-5 lg:hidden'>
+          <img src={artbeaImgUrl} className='w-[300px]' />
         </div>
-        <div className='z-50 p-4'>
-          <h2 className='text-center font-roboto-mono text-2xl md:text-left'>
+        <div className='z-50 p-4 lg:flex-1'>
+          <h2 className='text-center font-roboto-mono text-3xl lg:text-left'>
             artbea
           </h2>
-          <h3 className='mb-4 text-center font-roboto-mono text-lg md:text-left'>
+          <h3 className='mb-4 text-center font-roboto-mono text-lg lg:text-left'>
             photography
           </h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            dictum magna consequat augue vestibulum finibus. In hac habitasse
-            platea dictumst. Nulla pulvinar a quam sit amet mollis. Donec non
-            ligula facilisis, tempor odio at, efficitur metus. Maecenas eu enim
-            elementum, semper tortor at, aliquam augue. Nulla rutrum vehicula
-            urna, at lacinia dolor convallis in. Pellentesque efficitur congue
-            nulla, et venenatis nunc malesuada nec. Vivamus nec dui metus.
-            Vestibulum neque nisl, ornare eu vestibulum vel, pulvinar at mi.
-            Mauris consequat dui est, sit amet ultricies ipsum egestas eu.
+            artbea was founded in 2011. Here we display our photography work. We
+            print on various media up to A2 on the Canon Pro-1000 printer. Check
+            us out at{' '}
+            <a
+              href='https://artbea.photo'
+              target='_blank'
+              rel='noreferrer'
+              className='text-[#FF6699] hover:underline'
+            >
+              artbea.photo
+            </a>
+            .
           </p>
         </div>
-        <div className='z-50 hidden items-center justify-center bg-white px-4 pb-5 md:flex'>
-          <IdBoxLogo width='150px' />
+        <div className='z-50 hidden items-center justify-center bg-white lg:flex lg:flex-1'>
+          <img src={artbeaImgUrl} />
         </div>
       </div>
     </div>

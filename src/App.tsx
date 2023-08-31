@@ -8,6 +8,7 @@ import { Separator } from '~/components/Separator'
 import { FixedGear } from '~/components/FixedGear'
 import { FrontenFabriek } from '~/components/FrontenFabriek'
 import { Artbea } from '~/components/Artbea'
+import { HomeBox } from './components/HomeBox'
 
 // const OurProjects = ({ children }: { children: ReactNode }) => {
 //   return (
@@ -31,6 +32,7 @@ const App = () => {
       <Separator />
       <OurProjects>
         <IdentityBox />
+        <HomeBox />
         <FixedGear />
         <FrontenFabriek />
         <Artbea />

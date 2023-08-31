@@ -1,31 +1,27 @@
-import { ReactComponent as IdBoxLogo } from '~/assets/id-box.svg'
+import frontenFabriekImgUrl from '~/assets/fronten-fabriek.jpg'
 
 const FrontenFabriek = () => {
   return (
-    <div className='relative left-0 top-0 mt-5 w-full'>
-      <div className='absolute left-0 z-0 hidden h-full w-full bg-[#EFEFEF] text-white md:block' />
-      <div className='left-0 right-0 z-50 mx-auto w-full max-w-2xl flex-col bg-[#EFEFEF] text-black md:flex md:flex-row'>
-        <div className='z-50 flex items-center justify-center bg-white px-4 pb-5'>
-          <IdBoxLogo width='150px' />
+    <div className='relative left-0 top-0 mt-5 w-screen'>
+      <div className='absolute left-0 z-0 hidden h-full w-full bg-[#EFEFEF] text-white lg:block' />
+      <div className='left-0 right-0 z-50 mx-auto w-4/5 max-w-screen-lg flex-col bg-[#EFEFEF] text-black lg:flex lg:flex-row'>
+        <div className='z-50 flex items-center justify-center bg-white px-4 pb-5 lg:flex-1'>
+          <img src={frontenFabriekImgUrl} className='w-[300px]' />
         </div>
-        <div className='z-50 p-4'>
-          <h2 className='text-center font-roboto-mono text-2xl md:text-left'>
+        <div className='z-50 p-4 lg:flex-1'>
+          <h2 className='text-center font-roboto-mono text-3xl lg:text-left'>
             Fronten Fabriek
           </h2>
-          <h3 className='mb-4 text-center font-roboto-mono text-lg md:text-left'>
+          <h3 className='mb-4 text-center font-roboto-mono text-lg lg:text-left'>
             Creative Woodworking
           </h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            dictum magna consequat augue vestibulum finibus. In hac habitasse
-            platea dictumst. Nulla pulvinar a quam sit amet mollis. Donec non
-            ligula facilisis, tempor odio at, efficitur metus. Maecenas eu enim
-            elementum, semper tortor at, aliquam augue. Nulla rutrum vehicula
-            urna, at lacinia dolor convallis in. Pellentesque efficitur congue
-            nulla, et venenatis nunc malesuada nec. Vivamus nec dui metus.
-            Vestibulum neque nisl, ornare eu vestibulum vel, pulvinar at mi.
-            Mauris consequat dui est, sit amet ultricies ipsum egestas eu.
+            Building your kitchen does not have to brake your budget. At Fronten
+            Fabriek we explore a more sustainable ways of building various
+            kitchen elements from affordable materials, yet still having
+            personal and professional look and feel.
           </p>
+          <p className='mt-4'>More info coming soon...</p>
         </div>
       </div>
     </div>
