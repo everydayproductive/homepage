@@ -17,9 +17,9 @@ const FrontenFabriek = () => {
           </h3>
           <p>
             Building your kitchen does not have to brake your budget. At Fronten
-            Fabriek we explore a more sustainable ways of building various
-            kitchen elements from affordable materials, yet still having
-            personal and professional look and feel.
+            Fabriek we explore more sustainable ways of building various kitchen
+            elements from affordable materials, yet still having personal and
+            professional look and feel.
           </p>
           <p className='mt-4'>More info coming soon...</p>
         </div>

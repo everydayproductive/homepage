@@ -3,33 +3,33 @@ import { ReactComponent as DiscordLogoWhite } from '~/assets/discord-logo-white.
 import { ReactComponent as SlackLogoWhite } from '~/assets/Slack_RGB_White.svg'
 
 const Footer = () => (
-  <div className='mt-16 flex w-full items-center justify-center bg-[#459ED0]'>
+  <div className='mt-10 flex w-full items-center justify-center bg-[#459ED0] lg:mt-16'>
     <div className='w-full max-w-2xl overflow-x-visible px-5 md:px-0'>
-      <div className='flex w-full flex-col sm:flex-row lg:w-[120%]'>
-        <div className='flex w-full font-roboto-mono text-[0.5rem] font-light text-white sm:w-3/4 sm:justify-between md:w-4/5 md:text-xs'>
-          <div className='flex min-w-min flex-col py-2 pr-3'>
+      <div className='flex w-full flex-row lg:w-[110%] xl:w-[120%]'>
+        <div className='flex w-3/4 flex-col font-roboto-mono text-xs font-light text-white sm:flex-row sm:justify-between md:w-4/5 md:text-xs'>
+          <div className='flex min-w-min flex-col px-2 py-2 pr-3'>
             <h1 className='whitespace-nowrap text-xs sm:text-sm'>
               Everyday Productive
             </h1>
-            <h2 className='mt-2 mb-1 font-bold'>Visiting address:</h2>
+            <h2 className='mb-1 mt-2 font-bold'>Visiting address:</h2>
             <p className='whitespace-pre-line leading-tight'>
               {`Microlab
                 Kastanjelaan 400
                 5616LZ Eindhoven`}
             </p>
-            <div className='flex flex-col py-3 sm:hidden'>
+            <div className='flex flex-col py-3 md:hidden'>
               <p className='whitespace-nowrap'>KVK: 51982277</p>
               <p className='whitespace-nowrap'>BTW: NL002447038B96</p>
               <p className='whitespace-nowrap sm:mt-4'>Koningskinderen 29</p>
               <p className='whitespace-nowrap'>5629KC Eindhoven</p>
+              {/* <p className='whitespace-nowrap'>info@everydayproductive.com</p> */}
             </div>
           </div>
-          <div className='ml-10 flex flex-col py-2 pr-3 sm:ml-0'>
+          <div className='ml-0 flex-col px-2 py-2 pr-3 sm:ml-10 sm:flex'>
             <h1 className='text-xs sm:text-sm'>Contact</h1>
-            <h2 className='mt-2'>info@everydayproductive.com</h2>
-            <div className='flex flex-col sm:flex-row sm:items-center'>
+            <div className='flex flex-col md:flex-row md:items-center'>
               <a
-                className='block sm:mb-5 sm:mr-2'
+                className='block sm:mb-0 sm:mr-2'
                 href='https://discord.com/invite/Sq5bgwpwWs'
                 target='_blank'
                 rel='noreferrer'
@@ -39,7 +39,7 @@ const Footer = () => (
                 </div>
               </a>
               <a
-                className='mb-5 block'
+                className='mb-0 block'
                 href='https://join.slack.com/t/everydayproductive/shared_invite/zt-1j8ilbdcj-bZawEy2UfTz6FTrN5xYowQ'
                 target='_blank'
                 rel='noreferrer'
@@ -49,12 +49,13 @@ const Footer = () => (
                 </div>
               </a>
             </div>
+            <h2 className='mb-2 mt-2'>info@everydayproductive.com</h2>
           </div>
-          <div className='hidden items-center justify-end bg-white px-2 lg:flex'>
+          <div className='hidden bg-white px-2 lg:flex lg:items-center lg:justify-end'>
             <EPLogo width={80} />
           </div>
         </div>
-        <div className='hidden font-roboto-mono text-[0.5rem] font-light text-white sm:ml-5 sm:flex sm:text-xs'>
+        <div className='hidden pr-2 font-roboto-mono font-light text-white sm:text-xs md:flex lg:ml-5'>
           <div className='flex flex-col py-3'>
             <p className='whitespace-nowrap'>KVK: 51982277</p>
             <p className='whitespace-nowrap'>BTW: NL002447038B96</p>
