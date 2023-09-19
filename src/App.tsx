@@ -20,8 +20,8 @@ const App = () => {
         <IdentityBox />
         <HomeBox />
         <FixedGear />
-        <FrontenFabriek />
         <Artbea />
+        <FrontenFabriek />
       </OurProjects>
       <Footer />
     </Layout>
