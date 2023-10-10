@@ -3632,9 +3632,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"happy-dom@npm:^10.11.1":
-  version: 10.11.1
-  resolution: "happy-dom@npm:10.11.1"
+"happy-dom@npm:^12.9.1":
+  version: 12.9.1
+  resolution: "happy-dom@npm:12.9.1"
   dependencies:
     css.escape: ^1.5.1
     entities: ^4.5.0
@@ -3642,7 +3642,7 @@ __metadata:
     webidl-conversions: ^7.0.0
     whatwg-encoding: ^2.0.0
     whatwg-mimetype: ^3.0.0
-  checksum: ac71c3c2c1e92dd3ec63a931a34e5dc42f2229dedbb0d67e12037a61d47c62a4fa419eb77fc7e5ddf0fe29e41a6023b9265dd08b7413b51afe01881f2e7304a5
+  checksum: 02e7f73199cda296ede1479559166ff1d2b04a4169679fa12d4b7c3b90caefc571c18ca6664bdeb1054b6d22465b2c10e78b3ddfc5676e87f7bd7b16b9afb00b
   languageName: node
   linkType: hard
 
@@ -6534,7 +6534,7 @@ __metadata:
     eslint-plugin-react: ^7.33.2
     eslint-plugin-react-hooks: ^4.6.0
     eslint-plugin-react-refresh: ^0.4.3
-    happy-dom: ^10.11.1
+    happy-dom: ^12.9.1
     postcss: ^8.4.28
     prettier: ^3.0.3
     prettier-plugin-tailwindcss: ^0.5.3
