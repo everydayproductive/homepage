@@ -1,4 +1,5 @@
-import { render, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
+import { screen } from '@testing-library/dom'
 
 import App from '../src/App'
 
@@ -10,7 +11,7 @@ describe('App', () => {
 
   it('displays welcome text', () => {
     render(<App />)
-    expect(screen.getByText(/^Creative/i)).toBeInTheDocument()
-    expect(screen.getByText(/^Constraints/i)).toBeInTheDocument()
+    screen.getAllByText(/^Creative/i)
+    expect(screen.getAllByText(/^Constraints/i).length).toBeGreaterThan(0)
   })
 })

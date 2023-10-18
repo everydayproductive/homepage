@@ -1,6 +1,6 @@
-import { ReactComponent as EPLogo } from '~/assets/ep-logo.svg'
-import { ReactComponent as DiscordLogoWhite } from '~/assets/discord-logo-white.svg'
-import { ReactComponent as SlackLogoWhite } from '~/assets/Slack_RGB_White.svg'
+import EPLogo from '~/assets/ep-logo.svg?react'
+import DiscordLogoWhite from '~/assets/discord-logo-white.svg?react'
+import SlackLogoWhite from '~/assets/Slack_RGB_White.svg?react'
 
 const Footer = () => (
   <div className='mt-10 flex w-full items-center justify-center bg-[#459ED0] lg:mt-16'>

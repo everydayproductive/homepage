@@ -1,4 +1,4 @@
-import { ReactComponent as EPLogo } from '~/assets/ep-logo.svg'
+import EPLogo from '~/assets/ep-logo.svg?react'
 
 const Header = () => (
   <div className='mb-14 flex w-full items-center bg-white md:mb-8 md:justify-center'>

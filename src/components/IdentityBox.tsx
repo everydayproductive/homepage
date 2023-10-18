@@ -1,4 +1,4 @@
-import { ReactComponent as IdBoxLogo } from '~/assets/id-box.svg'
+import IdBoxLogo from '~/assets/id-box.svg?react'
 
 const IdentityBox = () => {
   return (

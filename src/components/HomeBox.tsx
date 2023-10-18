@@ -1,4 +1,4 @@
-import { ReactComponent as HomeBoxSvg } from '~/assets/home-box.svg'
+import HomeBoxSvg from '~/assets/home-box.svg?react'
 
 const HomeBox = () => {
   return (
