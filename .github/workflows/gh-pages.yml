@@ -25,14 +25,18 @@ jobs:
         uses: actions/setup-node@v4.0.2
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Install bun.sh
-        run: curl https://bun.sh/install | bash
-      - name: Update PATH
-        run: echo "$BUN_INSTALL/bin" >> $GITHUB_PATH
+      # - name: Install bun.sh
+      #   run: curl https://bun.sh/install | bash
+      # - name: Update PATH
+      #   run: echo "$BUN_INSTALL/bin" >> $GITHUB_PATH
+      # - name: Install Dependencies
+      #   run: bun install
       - name: Install Dependencies
-        run: bun install
+        run: yarn install
+      # - name: Build Packages 📦
+      #   run: bun run build
       - name: Build Packages 📦
-        run: bun run build
+        run: yarn build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.6.0
         with:
