@@ -25,6 +25,8 @@ jobs:
         uses: actions/setup-node@v4.0.2
         with:
           node-version: ${{ matrix.node-version }}
+      # BUN seems to be throwing some strange tsconfig errors here (does not happen locally)
+      # Is this a github actions issue?
       # - name: Install bun.sh
       #   run: curl https://bun.sh/install | bash
       # - name: Update PATH
