@@ -45,11 +45,11 @@ exports[`App > has proper styling 1`] = `
                     id="ep_zeit.png-2"
                   >
                     <g
-                      data-name="P\\\\xA0Image"
+                      data-name="P\\xA0Image"
                       id="P_Image-3"
                     >
                       <image
-                        data-name="P\\\\xA0Image"
+                        data-name="P\\xA0Image"
                         height="664"
                         id="P_Image-4"
                         transform="translate(201.79 28.54)"
@@ -58,11 +58,11 @@ exports[`App > has proper styling 1`] = `
                       />
                     </g>
                     <g
-                      data-name="E\\\\xA0Image"
+                      data-name="E\\xA0Image"
                       id="E_Image-3"
                     >
                       <image
-                        data-name="E\\\\xA0Image"
+                        data-name="E\\xA0Image"
                         height="664"
                         id="E_Image-4"
                         transform="translate(23.79 28.54)"
@@ -8159,11 +8159,11 @@ exports[`App > has proper styling 1`] = `
                       id="ep_zeit.png-2"
                     >
                       <g
-                        data-name="P\\\\xA0Image"
+                        data-name="P\\xA0Image"
                         id="P_Image-3"
                       >
                         <image
-                          data-name="P\\\\xA0Image"
+                          data-name="P\\xA0Image"
                           height="664"
                           id="P_Image-4"
                           transform="translate(201.79 28.54)"
@@ -8172,11 +8172,11 @@ exports[`App > has proper styling 1`] = `
                         />
                       </g>
                       <g
-                        data-name="E\\\\xA0Image"
+                        data-name="E\\xA0Image"
                         id="E_Image-3"
                       >
                         <image
-                          data-name="E\\\\xA0Image"
+                          data-name="E\\xA0Image"
                           height="664"
                           id="E_Image-4"
                           transform="translate(23.79 28.54)"
